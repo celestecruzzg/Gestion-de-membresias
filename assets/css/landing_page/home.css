@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  ---color-1: #fab000;
+  ---color-2: #fa3600;
+  ---color-3: #111111;
+  ---color-4: #969696;
+  ---color-5: #ffffff;
+}
+
+/*!!!! Estilo general*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*!!!! Estilo body*/
+body {
+  padding-top: 60px; /* Para evitar que el contenido se superponga al navbar fijo */
+}
+
+/*!!! Estilos para el Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(---color-3);
+  padding: 10px 20px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/*Navegación del navbar*/
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: var(---color-5);
+  text-decoration: none;
+}
+
+.navegacion a {
+  color: var(---color-4);
+  font-weight: 600;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.navegacion a:hover {
+  color: var(---color-1);
+}
+
+.navegacion a.inicio {
+  color: var(---color-1);
+}
+
+/*Botón de inscripción*/
+.btn {
+  color: var(---color-3);
+  background-color: var(---color-1);
+  font-size: 15px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+/*Botón de login*/
+.btn-login {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre el icono y el texto */
+  color: var(---color-3);
+  background-color: var(---color-1);
+  font-size: 15px;
+  padding: 10px 20px; /* Añadir relleno para mejorar el diseño */
+  text-align: center;
+  text-decoration: none; /* Asegurarse de que no haya subrayado en el botón */
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn-login i{
+  font-size: 30px; /* Ajuste del tamaño del icono */
+}
+
+.btn:hover {
+  color: var(---color-5);
+  background-color: var(---color-2);
+}
+
+.btn-login:hover{
+  color: var(---color-5);
+  background-color: var(---color-2);
+}
+
+/*!!!! ESTILO DEL HERO*/
+.hero {
+  background: url("../../image/hero.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: var(---color-5);
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.bienvenida{
+  background-color: var(---color-1);
+}
+
+.bienvenida h2{
+  color: var(---color-3);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  background-color: var(---color-1);
+  color: var(---color-3);
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/*! Planes*/
+.planes {
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.planes th, .planes td {
+  border: 1px solid var(--color-4);
+  padding: 15px;
+  text-align: center;
+}
+
+.planes th {
+  background-color: var(--color-1);
+  color: var(--color-5);
+}
+
+.planes tbody tr:nth-child(even) {
+  background-color: var(--color-5);
+}
+
+.planes tbody tr:nth-child(odd) {
+  background-color: var(--color-4);
+}
+
+h2 {
+  color: var(--color-3);
+}
+
+.table-container {
+  padding: 20px;
+}
+
+/*Iconos*/
+.icon-size{
+  font-size: 30px;
+}
+
+/*Botón de inscribirse*/
+.boton-inscribir{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*!!! FOOTER */
+.footer {
+  margin-top: 65px;
+  background-color: var(---color-3);
+  color: var(---color-5);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.footer-logo span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-nav a:hover {
+  color: #ddd;
+}
+
+.otros {
+  display: flex;
+  color: #ffff;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #ddd;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+  }
+
+  .footer-logo {
+    margin-bottom: 0;
+  }
+
+  .footer-nav {
+    margin-bottom: 0;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+  }
+}
