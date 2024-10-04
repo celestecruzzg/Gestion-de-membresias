@@ -13,7 +13,7 @@ if (isset($_SESSION['admin_id'])) {
     session_destroy();
 
     // Redireccionar a la página de login
-    header("Location: ../index.html");
+    header("Location: ../views/admin/index.html"); '';
 } else {
     header("Location: ../index.html");
 }
